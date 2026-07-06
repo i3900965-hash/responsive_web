@@ -1,0 +1,99 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+}
+
+.hero{
+height:100vh;
+background:url(images/background_coffee.jpg) center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.card img{
+height:250px;
+object-fit:cover;
+}
+
+footer{
+font-size:18px;
+}
+
+/* Media Query */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.card img{
+height:200px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+padding:20px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+/* Menu Card Hover Effect */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body h5 {
+    transition: color 0.3s ease;
+}
+
+.card:hover h5 {
+    color: #d2691e;
+}
+
